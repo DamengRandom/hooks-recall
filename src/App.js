@@ -7,7 +7,7 @@ import './App.css';
 // import UseContextDemo from './components/UseContextDemo';
 import { ThemeProvider } from './components/UseContextSubComponents/ThemeContext';
 // import UseReducerDemo from './components/UseReducerDemo';
-import UseCallbackDemo from './components/UseCallbackDemo';
+// import UseCallbackDemo from './components/UseCallbackDemo';
 import CustomeHookDemo from './components/CustomHookDemos/CustomeHookDemo';
 
 function App() {
