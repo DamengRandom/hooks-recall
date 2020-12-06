@@ -3,7 +3,12 @@ import './App.css';
 // import MemoDemo from './components/MemoDemo';
 // import MemoDemoSecond from './components/MemoDemoSecond';
 // import UseMemoDemo from './components/UseMemoDemo';
-import UseRefDemo from './components/UseRefDemo';
+// import UseRefDemo from './components/UseRefDemo';
+// import UseContextDemo from './components/UseContextDemo';
+import { ThemeProvider } from './components/UseContextSubComponents/ThemeContext';
+// import UseReducerDemo from './components/UseReducerDemo';
+import UseCallbackDemo from './components/UseCallbackDemo';
+import CustomeHookDemo from './components/CustomHookDemos/CustomeHookDemo';
 
 function App() {
   React.useEffect(() => {
@@ -28,10 +33,16 @@ function App() {
 
   return (
     <div className="App">
-      {/* <MemoDemo /> */}
-      {/* <MemoDemoSecond /> */}
-      {/* <UseMemoDemo /> */}
-      <UseRefDemo />
+      <ThemeProvider>
+        {/* <MemoDemo /> */}
+        {/* <MemoDemoSecond /> */}
+        {/* <UseMemoDemo /> */}
+        {/* <UseRefDemo /> */}
+        {/* <UseContextDemo /> */}
+        {/* <UseReducerDemo /> */}
+        {/* <UseCallbackDemo /> */}
+        <CustomeHookDemo />
+      </ThemeProvider>
     </div>
   );
 }
