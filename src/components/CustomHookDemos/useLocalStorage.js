@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 function getSavedValue(key, initialValue) {
   const savedValue = JSON.parse(localStorage.getItem(key));
   if(savedValue) return savedValue;
-  if(initialValue instanceof Function) return initialValue(); // check initail value whether is a function or a value
+  if(initialValue instanceof Function) return initialValue(); // check initial value whether is a function or a value
   return initialValue;
 }
 

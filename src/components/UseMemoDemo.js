@@ -4,10 +4,10 @@ export default function UseCallbackDemo() {
   const [number, setNumber] = useState(0);
   const [dark, setDark] = useState(false);
   const doubleNumber = useMemo(() =>
-    expensoveCostFunc(number), [number]);
+    expensiveCostFunc(number), [number]);
     // useMemo is for performance consideration, avoid unnecessary re-renders, eg: functions, components
     // when to use:
-    // - expensive cost function needs to use it for avoiding re-rendering (expensoveCostFunc)
+    // - expensive cost function needs to use it for avoiding re-rendering (expensiveCostFunc)
     // - reference whether keeps the same or not, if not, cause re-render (themeStyles)
   const themeStyles = useMemo(() => ({
     backgroundColor: dark ? "black" : "white",
@@ -33,7 +33,7 @@ export default function UseCallbackDemo() {
   );
 }
 
-function expensoveCostFunc(num) {
+function expensiveCostFunc(num) {
   console.log('Calling slow function');
   for (let i = 0; i <= 1000000000; i++) {}
   return num * 2;

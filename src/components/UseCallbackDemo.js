@@ -8,7 +8,7 @@ export default function UseCallbackDemo() {
   const getItems = useCallback(() => {
     return [number, number + 1]
   }, [number]); // detect changes on this arrow function
-  // only use whe creating is very slow, we need useCallback to avoid uncessary re-rendering for perofrmance handling !!!
+  // only use whe creating is very slow, we need useCallback to avoid unnecessary re-rendering for performance handling !!!
   //  when you have some value inside dependency array eg: [getItems] inside <ItemListComponent /> !!! you need to to useCallback !!!
 
   const theme = {
@@ -18,7 +18,7 @@ export default function UseCallbackDemo() {
 
   const toggleTheme = () => {
     console.log('toggle theme ...');
-    setDark(prevDark => !prevDark)
+    setDark(prevDark => !prevDark);
   }
 
   return (
