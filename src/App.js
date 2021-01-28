@@ -8,8 +8,9 @@ import './App.css';
 import { ThemeProvider } from './components/UseContextSubComponents/ThemeContext';
 // import UseReducerDemo from './components/UseReducerDemo';
 // import UseCallbackDemo from './components/UseCallbackDemo';
-// import CustomeHookDemo from './components/CustomHookDemos/CustomeHookDemo';
-import AnotherUseCallbackDemo from './components/AnotherUseCallbackDemo/AnotherUseCallbackDemo';
+// import CustomHookDemo from './components/CustomHookDemos/CustomHookDemo';
+// import AnotherUseCallbackDemo from './components/AnotherUseCallbackDemo/AnotherUseCallbackDemo';
+import TheParent from './components/useMemoUseCallbackThirdExample/TheParent';
 
 function App() {
   React.useEffect(() => {
@@ -42,8 +43,9 @@ function App() {
         {/* <UseContextDemo /> */}
         {/* <UseReducerDemo /> */}
         {/* <UseCallbackDemo /> */}
-        {/* <CustomeHookDemo /> */}
-        <AnotherUseCallbackDemo />
+        {/* <CustomHookDemo /> */}
+        {/* <AnotherUseCallbackDemo /> */}
+        <TheParent />
       </ThemeProvider>
     </div>
   );

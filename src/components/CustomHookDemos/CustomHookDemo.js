@@ -1,7 +1,7 @@
 import React from 'react';
 import useLocalStorage from './useLocalStorage';
 
-export default function CustomeHookDemo() {
+export default function CustomHookDemo() {
   const [name, setName] = useLocalStorage('name', '');
 
   return (
