@@ -18,38 +18,38 @@ import React, { useEffect, useState, useRef } from 'react'
 //   )
 // }
 
-// export default function UseRefDemo() {
-//   const [name, setName] = useState('');
-//   const inputRef = useRef(null);
-
-//   const focus = () => {
-//     inputRef.current.focus();
-//   };
-
-//   return (
-//     <div>
-//       <input ref={inputRef} value={name} onChange={e => setName(e.target.value)} />
-//       <div>My name is: {name}</div>
-//       <button onClick={focus}>Click to focus on input field</button>
-//     </div>
-//   )
-// }
-
 export default function UseRefDemo() {
   const [name, setName] = useState('');
-  const prevName = useRef(null);
+  const inputRef = useRef(null);
 
-  useEffect(() => {
-    prevName.current = name;
-  }, [name]);
+  const focus = () => {
+    inputRef.current.focus();
+  };
 
   return (
     <div>
-      <input value={name} onChange={e => setName(e.target.value)} />
-      <div>My name is: {name}, and my name was {prevName.current}</div>
+      <input ref={inputRef} value={name} onChange={e => setName(e.target.value)} />
+      <div>My name is: {name}</div>
+      <button onClick={focus}>Click to focus on input field</button>
     </div>
   )
 }
+
+// export default function UseRefDemo() {
+//   const [name, setName] = useState('');
+//   const prevName = useRef(null);
+
+//   useEffect(() => {
+//     prevName.current = name;
+//   }, [name]);
+
+//   return (
+//     <div>
+//       <input value={name} onChange={e => setName(e.target.value)} />
+//       <div>My name is: {name}, and my name was {prevName.current}</div>
+//     </div>
+//   )
+// }
 
 // useRef common usages:
 

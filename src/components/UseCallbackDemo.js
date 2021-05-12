@@ -9,7 +9,7 @@ export default function UseCallbackDemo() {
     return [number, number + 1]
   }, [number]); // detect changes on this arrow function
   // only use whe creating is very slow, we need useCallback to avoid unnecessary re-rendering for performance handling !!!
-  //  when you have some value inside dependency array eg: [getItems] inside <ItemListComponent /> !!! you need to to useCallback !!!
+  //  when you have some value inside dependency array eg: [getItems] inside <ItemListComponent /> !!! you need to use the useCallback hook !!!
 
   const theme = {
     backgroundColor: dark ? '#333' : '#ccc',

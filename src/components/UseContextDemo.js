@@ -26,7 +26,7 @@ import FunctionContextComponent from './UseContextSubComponents/FunctionContextC
 
 export default function UseContextDemo() {
   return (
-    // <ThemeProvider> I imported from App component level, so all compoennts can use context values
+    // <ThemeProvider> I imported from App component level, so all components can use context values
       <FunctionContextComponent />
     // </ThemeProvider>
   );

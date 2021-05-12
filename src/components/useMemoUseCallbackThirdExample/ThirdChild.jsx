@@ -3,7 +3,8 @@ import React from 'react'
 export default function ThirdChild({ fetcher }) {
   React.useEffect(() => {
     console.log('fecther called?');
-    fetcher('todos');
+    fetcher('users'); // only render once because we use useCallback in parent component !!!
+    // fetcher('todos');
   }, [fetcher]);
 
   return (

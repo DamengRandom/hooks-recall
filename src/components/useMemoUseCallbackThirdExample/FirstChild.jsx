@@ -9,4 +9,5 @@ const FirstChild = () => {
   );
 }
 
-export default React.memo(FirstChild);
+export default React.memo(FirstChild); // avoid re-rendered by using .memo
+// export default FirstChild; // getting re-rendered !!!

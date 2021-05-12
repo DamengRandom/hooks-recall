@@ -56,6 +56,7 @@ const DirectChild = React.memo(() => {
   console.log('Direct child');
   return (
     <nav>
+      <p>Direct child component here: </p>
       <DeeperChild />
     </nav>
   )

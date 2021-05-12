@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import FirstChild from './FirstChild';
+import FirstChild from './FirstChild';
 // import SecondChild from './SecondChild';
 // if I extract array out of component scope, then it won't cause re-render for SecondChild component
 // const arrayReference = [1, 2, 3];
@@ -29,7 +29,7 @@ export default function TheParent() {
         <button onClick={() => setCounter(counter+1)}> + 1</button>
         <button onClick={() => setCounter(counter-1)}> - 1</button>
       </div>
-      {/* <FirstChild /> */}
+      <FirstChild />
       {/* <SecondChild arrayReference={arrayReference} /> */}
       <ThirdChild fetcher={fetcher} />
       <button onClick={() => fetcher('users')}>Trigger fetch again !!</button>
